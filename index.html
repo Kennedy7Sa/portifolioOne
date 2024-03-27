@@ -1,48 +1,186 @@
-<!DOCTYPE html>   <!-- teste de commit  -->
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <!--ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--GOOGLE FONT (MONTSERRAT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrapicons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- fim bootstrapicons  -->
+    <!--STILO-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
 </head>
-<body>
-    <!-- cabeçalho -->
-    <header class="cabecalho">
 
-        <nav class="cabecalho__menu">
-            <a  class="cabecalho__menu__link"href ='index.html'>Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="curriculo.html">Curriculo</a>
-
-        </nav>
-           
-    </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro
-            nível com um 
-            <strong class="tituloDestaque">Front-end de qualidade!</strong></h1>
-            <p class="apresentacao__conteudo__titulo__paragrafo">Olá! Sou Kennedy S. Arruda, desenvolvedor Front-end com especialidade em JavaScript, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-            <div class="apresentacao__links">
-            <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-            <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/kennedy-arruda-devbackend/"><img src="./assets/linkedin.png" alt="">
-                Linkedin     
-        </a>
-            <a class="apresentacao__links__navegacao" href="https://github.com/Kennedy7Sa">
-                <img src="./assets/github.png" alt="logo github">
-                
-                Github</a> 
-            </div>
-        </section>
-        <img class="apresentacao__imagem" src="./assets/editada.jpg" alt="foto de perfil">       
+<body class="body">
+    <nav>
+        <!-- pra delimitar as bordas use a div nav_container -->
+        <div class="nav_container">
+            <a href="./index.html" class="nav_logo">Kennedy <span>S.A</span></a>
+            <ul class="nav_links">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portifolio">Portfólio</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5511920051133&text=Ol%C3%A1%20vim%20pelo%20site%20e%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os%20" target="_blank">Contato</a></li>
+            </ul>
+            <button class="nav_toggle-btn" id="nav_toggle-open"><i class="uil uil-bars"></i></button>
+            <button class="nav_toggle-btn" id="nav_toggle-close"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+<main>
+    <section class="topo-do-site">
         
-        </main>
-    <!-- roda pé  -->
-    <footer class="rodape">
+    
+        <div class="interface">
+            <div class="flex">
+                <div class="txt-topo-site">
+                     <h1>Elevando sua Presença Digital<span>.</span></h1>  
+                     <p>Kennedy S.A é uma empresa inovadora e dedicada, especializada em oferecer soluções completas de presença digital e tecnologia para indivíduos e empresas. Fundada com a visão de simplificar o mundo digital e tornar a tecnologia acessível a todos, nossa empresa se destaca pela qualidade, criatividade e compromisso com a satisfação do cliente.</p> 
+                    <div class="btn-contato">
+                        <a href="https://api.whatsapp.com/send?phone=5511920051133&text=Ol%C3%A1%20vim%20pelo%20site%20e%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os%20" target="_blank"><button>Entre em contato</button></a>
+                    </div><!-- btn-contato  -->
+                    
+                    </div>  <!-- txt topo site   -->
+                <div class="img-topo-site">
+                    <img src="assets/kennedyprofissional de ti.png" alt="kennedy s. arruda pessoa desenvolvedora">
+                </div><!-- img-topo-site -->
+                
+            </div> <!-- flex -->
+            
+        </div> <!-- interface serve pra delimitar as borda do site  -->
+    </section> <!-- topo site  -->    
+    <section class="especialidades" id="servicos">
+        <div class="interface">
+            <h2 class="titulo">MINHAS <SPAN>ESPECIALIDADES.</SPAN></h2>
+            <div class="flex">
+                <DIV class="especialidades-box">
+                    <i class="bi bi-code-square"></i>
+                    <h3>Website</h3>
+                    <p>Nosso compromisso com a inovação e a excelência técnica nos permite criar sites responsivos, intuitivos e visualmente atraentes, que proporcionam uma experiência de usuário superior em todos os dispositivos.</p>
+                </DIV> <!-- especialidades-box -->
+                <DIV class="especialidades-box">
+                    <i class="bi bi-pc-display-horizontal"></i>
+                    <h3>Manutenção de PC</h3>
+                    <p>A nossa expertise não se limita apenas ao design web. Como especialistas em tecnologia, também oferecemos serviços de manutenção de PCs e notebooks. Com um foco na eficiência e na rápida resolução de problemas, nossa equipe qualificada e experiente está pronta para lidar com uma ampla gama de questões, desde atualizações de software até reparos de hardware complexos.</p>
+                </DIV> <!-- especialidades-box -->
+                <DIV class="especialidades-box">
+                    <i class="bi bi-palette"></i>
+                    <h3>Designer gráfico</h3>
+                    <p>E na parte gráfica trabalhamos com produtos personalizados , canecas e camisetas , no link a seguir você será redirecionado para nossa loja virtual clique <a href="https://platinumgiftssk.mercadoshops.com.br" target="_blank">aqui.</a>  </p>
+                </DIV> <!-- especialidades-box -->
+               
+            </div> <!-- flex -->
+           
+        </div><!-- interface -->
 
-        <p>Desenvolvido por Kennedy S. Arruda</p>
-    </footer>
+         
+    </section><!-- especialidades -->
+    <section class="sobre" id="sobre">
+        <div class="interface">
+            <div class="flex">
+                <div class="img-sobre">
+                    <img src="assets/kennedy com fundo.jpeg" alt="">
+                </div><!-- img-sobre -->
+                <div class="txt-sobre">
+                       <h2>MUITO PRAZER, <SPAn> SOU KENNEDY S. ARRUDA</SPAn></h2> 
+                       <P>Atualmente, estou comprometido com meu crescimento acadêmico, profissional e com minha pequena empresa,
+                         sou estudante de Análise e Desenvolvimento de Sistemas na Universidade Paulista
+                          (UNIP). Esta jornada acadêmica tem contribuído significativamente para a expansão 
+                          do meu conhecimento em áreas como programação, design de sistemas e resolução de 
+                          problemas complexos.</P>
+                        <P>Na Kennedy S.A, estamos comprometidos em superar as expectativas de nossos 
+                            clientes em todos os aspectos. Valorizamos a comunicação transparente, a 
+                            colaboração e o atendimento personalizado, garantindo que cada projeto
+                             seja concluído com sucesso e dentro do prazo. Nossa abordagem centrada
+                              no cliente nos permite entender as necessidades exclusivas de cada 
+                              cliente e fornecer soluções sob medida que impulsionam o seu sucesso.</P>
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/kennedy-arruda-devbackend/" target="_blank"><button><i class="bi bi-linkedin"></i></i></button></a>
+                            <a href="https://www.instagram.com/kennedy7s_a/?hl=pt-br" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/Kennedy7Sa" target="_blank"><button><i class="bi bi-github"></i></i></button></a>
+                        </div><!-- btn-social -->
+                        
+                    </div><!-- txt-sobre -->
+               
+                
+            </div>
+        </div><!-- interface  -->
+        
+    </section> <!-- sobre  -->
+    <section class="portifolio" id="portifolio">
+        <div class="interface">
+            <h2 class="titulo">MEU <span>PORTIFÓLIO</span></h2>
+            <div class="flex">
+               <div class="img-port" style="background-image:url(assets/portifolio\ encriptador.jpg) ;">
+                    <div class="overlay">Projeto encriptador</div><!-- overlay  -->
+                    
+            </div>
+               <div class="img-port" style="background-image:url(assets/portifolio\ encriptador.jpg) ;"><div class="overlay">Projeto encriptador</div><!-- overlay  --></div>
+               <div class="img-port" style="background-image:url(assets/portifolio\ encriptador.jpg) ;"><div class="overlay">Projeto encriptador</div><!-- overlay  --></div>
+               
+            </div> <!-- flex  -->
+        </div>  <!-- interface deicxar as bodas padronizada  -->
+      
+    </section><!-- portifolio -->
+    <section class="formulario"><!-- formulario  -->
+        
+        <div class="interface">
+            <h2 class="titulo">FALE <SPAN>COMIGO</SPAN></h2>
+            <FORM>
+                <input type="text" name="" id="" placeholder="Seu nome:" required>
+                <input type="text" name="" id="" placeholder="Seu email:"required>
+                <input type="text" name="" id="" placeholder="Seu celular:">
+                <textarea name="" id="" placeholder="Sua mensagem aqui:" required></textarea>
+                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+            </FORM>
 
+        </div> <!-- interface -->
+       
+    </section>
+   
+</main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                <div class="logo-footer">
+                    <p>Kennedy <span> S.A</span></p>
+                </div> <!-- logo-footer"  -->
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/kennedy-arruda-devbackend/" target="_blank"><button><i class="bi bi-linkedin"></i></i></button></a>
+                            <a href="https://www.instagram.com/kennedy7s_a/?hl=pt-br" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/Kennedy7Sa" target="_blank"><button><i class="bi bi-github"></i></i></button></a> 
+                        </div>  <!-- btn-social -->
+                    
+                </div>  <!-- flex   -->
+              
+               
+            </div><!-- "line-footer" -->
+           
+           
+           
+           
+           
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-at"></i> <a href="mailto:kennedy.arruda@aluno.unip.br">kennedy.arruda@aluno.unip.br</a></p>
+            </div><!-- "line-footer" -->
+              
+        </div><!-- interface              -->
+    </footer>    
+
+
+
+<script src="./main.js"></script>
 </body>
+
 </html>
